@@ -1,10 +1,10 @@
-import employee
+import exercise
 import datetime
 import sqlite3
-from employee import show_all
-from employee import add_record
-from employee import remove_record
-from employee import modify_record
+from exercise import show_all
+from exercise import add_record
+from exercise import remove_record
+from exercise import modify_record
 
 from colorama import Fore, Back, Style
 from colorama import init
@@ -29,11 +29,11 @@ while continue_running:
         try:
             selection = int(input("\nSelection: "))
         except ValueError:
-            print(Fore.RED + "You've entered a character that isn't a number. Please enter a number.")
+            print(Fore.RED + "You've entered a character that isn't a number. Please enter a number.\n")
             continue
 
-        if selection > 5 or selection < 0 or type(selection) == "String":
-            print(Fore.RED + "The number you've entered is not valid. Please try again.")
+        if selection > 5 or selection < 0:
+            print(Fore.RED + "The number you've entered is not valid. Please try again.\n")
         else:
             break
 
@@ -51,7 +51,6 @@ while continue_running:
             continue_running = True
         else:
             continue_running = False
-            print(Fore.YELLOW + "Thanks for using the program. Goodbye!")
 
     elif selection == 2:
         add_record()
@@ -67,7 +66,6 @@ while continue_running:
             continue_running = True
         else:
             continue_running = False
-            print(Fore.YELLOW + "Thanks for using the program. Goodbye!")
 
     elif selection == 3:
         modify_record()
@@ -83,7 +81,6 @@ while continue_running:
             continue_running = True
         else:
             continue_running = False
-            print(Fore.YELLOW + "Thanks for using the program. Goodbye!")
 
     elif selection == 4:
         remove_record()
@@ -99,7 +96,6 @@ while continue_running:
             continue_running = True
         else:
             continue_running = False
-            print(Fore.YELLOW + "Thanks for using the program. Goodbye!")
 
     elif selection == 5:
         continue_running = False
