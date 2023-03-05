@@ -2,7 +2,7 @@
 
 I created this project to become more familiar with databases, and to learn the sqlite3 library.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/-_0I-8JVv04)
 
 # Relational Database
 
