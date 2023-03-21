@@ -1,4 +1,4 @@
-# # Overview
+ # Overview
 
 I created this project to become more familiar with databases, and to learn the sqlite3 library.
 
